@@ -1,0 +1,19 @@
+# Maven build output
+/target/
+
+# Java class files and logs
+*.class
+*.log
+
+# IDEs and editors
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
