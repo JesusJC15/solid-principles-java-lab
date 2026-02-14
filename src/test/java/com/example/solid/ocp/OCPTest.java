@@ -13,4 +13,12 @@ public class OCPTest {
 
         assertEquals(20, discount);
     }
+
+    @Test
+    void shouldApplyRegularDiscount() {
+        DiscountCalculator calculator = new DiscountCalculator();
+        double discount = calculator.calculateDiscount(new RegularDiscount(), 100);
+
+        assertEquals(10, discount);
+    }
 }

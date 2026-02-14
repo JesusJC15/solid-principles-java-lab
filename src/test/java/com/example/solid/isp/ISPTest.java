@@ -11,4 +11,12 @@ public class ISPTest {
         Workable dev = new Developer();
         assertDoesNotThrow(dev::work);
     }
+
+    @Test
+    void humanWorkerShouldWorkAndEat() {
+        HumanWorker worker = new HumanWorker();
+
+        assertDoesNotThrow(worker::work);
+        assertDoesNotThrow(worker::eat);
+    }
 }

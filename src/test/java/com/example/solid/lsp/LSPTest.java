@@ -11,4 +11,12 @@ public class LSPTest {
         Drivable car = new ElectricCar();
         assertDoesNotThrow(car::drive);
     }
+
+    @Test
+    void gasCarShouldDriveAndRefuel() {
+        GasCar car = new GasCar();
+
+        assertDoesNotThrow(car::drive);
+        assertDoesNotThrow(car::refuel);
+    }
 }
